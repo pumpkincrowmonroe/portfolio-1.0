@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Lato');
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+
+#menu {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: blue;
+  position: fixed;
+  cursor: pointer;
+  float: right;
+  background-color: white;
+}
+
+/* HEADER STYLING */
+
+.title {
+  font-family: Arvo;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  color: white;
+  padding: 0px 15px 5px 15px;
+  opacity: 0;
+}
+
+.title h1 {
+  font-size: 3em;
+}
+
+.title h2 {
+  font-weight: lighter;
+}
+
+.headslide {
+  background-color: #78ACC6;
+  height: 100vh;
+}
+
+.fa-angle-double-down {
+  opacity: 1;
+  position: absolute;
+  color: white;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flickerAnimation 2s infinite;
+  cursor: pointer;
+}
+
+/* SLIDE ONE STYLING */
+
+.introslide {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 55vh;
+}
+
+.introcontent {
+  padding: 6.5% 0% 5% 15%;
+  color: #78ACC6;
+  width: 25.5%;
+  float: left;
+}
+
+.introcontent, .aboutcontent h1, h2, h3 {
+  font-family: Arvo;
+}
+
+.introcontent h3 {
+  font-weight: lighter;
+}
+
+/* .introcontent hr {
+  width: 30%;
+  background-color: #78ACC6;
+  border: 0 none;
+  color: #78ACC6;
+  height: 3px;
+  margin-bottom: 1%;
+  float: left;
+} */
+
+.profilepic img {
+  position: relative;
+  float: right;
+  margin: 4.3% 15% 0 0;
+  width: 445px;
+  filter: saturate(70%);
+  border: solid 5px #78ACC6;
+}
+
+/* SLIDE TWO STYLING */
+
+.aboutslide {
+  background-color: #78ACC6;
+  height: 49vh;
+}
+
+.aboutcontent {
+  padding: 3.5% 15% 2% 15%;
+  width: 70%;
+  color: #FFFFFF;
+  float: right;
+  text-align: right;
+}
+
+/* SLIDE THREE STYLING */
+
+.skillslide {
+  background-color: white;
+  height: 81vh;
+}
+
+.skillcontent {
+  text-align: left;
+  color: #78ACC6;
+  font-family: Arvo;
+  padding: 5% 15%;
+}
+
+.skillcontent h1, p {
+}
+
+.prolink {
+  padding: 3% 3% 0% 0%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #78ACC6;
+  width: 30%;
+  vertical-align: top;
+}
+
+.prolink 1 {
+  padding-left: 3%;
+}
+
+.prolink 3 {
+  padding-right: 3%;
+}
+.prolink p {
+  line-height: 200%;
+}
+
+figcaption {
+  display: inline-block;
+  text-align: center;
+}
+
+
+/* SLIDE FOUR STYLING */
+
+.toolslide {
+  background-color: #78ACC6;
+  height: 59vh;
+}
+
+.toolcontent {
+  padding: 3.5% 15% 2% 15%;
+  width: 70%;
+  color: #FFFFFF;
+  float: right;
+  text-align: center;
+  font-family: Arvo;
+}
+
+/* SLIDE FIVE STYLING */
+
+.projectslide {
+  background-color: white;
+  height: 145vh;
+}
+
+.projectcontent {
+  text-align: right;
+  color: #78ACC6;
+  font-family: Arvo;
+  padding: 5% 15%;
+  width: 70%;
+}
+
+.projectcontent .perpro h2 {
+  padding: 1% 0% 1% 1%;
+  border-bottom: solid 3px #78ACC6;
+  display: inline-block;
+}
+
+.projectcontent a {
+  text-decoration: none;
+  color: #78ACC6;
+  border-bottom: 3px solid #78ACC6;
+  padding: .1%;
+  transition: .1s ease-out;
+  cursor: pointer;
+}
+
+.projectcontent a:hover {
+  background-color: #78ACC6;
+  color: white;
+  transition: .1s ease-in;
+}
+
+.projectcontent .demopro {
+  text-align: left;
+  padding-bottom: 3%;
+}
+
+.projectcontent .demopro h2 {
+  padding: 1% 1% 1% 0%;
+  border-bottom: solid 3px #78ACC6;
+  display: inline-block;
+}
+
+.projectcontent p {
+  line-height: 200%;
+}
+
+.projectcontent h1 {
+  padding-bottom: 1%;
+}
+
+/* SLIDE SIX STYLING */
+
+.emailslide {
+  height: 25vh;
+  background-color: white;
+}
+
+.emailcontent {
+  margin: 2% 0;
+  color: #78ACC6;
+  text-align: center;
+}
+
+.emailcontent h1 {
+  font-family: Arvo;
+}
+
+.button {
+  position: relative;
+  border: solid 3px #78ACC6;
+  border-radius: 5px;
+  color: #78ACC6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .1s ease-out;
+}
+
+.button:hover {
+  color: white;
+  background-color: #78ACC6;
+  transition: .1s ease-in;
+}
+
+
+/* FOOTER */
+
+.footerslide {
+  background-color: #78ACC6;
+  height: 20vh;
+}
+
+.footercontent {
+  text-align: center;
+  color: white;
+  font-family: Arvo;
+}
+
+.footercontent p {
+  margin-top: 1%;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: .1s ease-out;
+}
+
+.footerslide .fa:hover {
+  transform: scale(1.5);
+  transition: .1s ease-in;
+}
+
+.fa-twitter, .fa-linkedin, .fa-instagram, .fa-github {
+  font-size: 100px;
+  color: white;
+}
+
+/* ALTERNATE LAYOUT FOR TABLET */
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+
+  .introslide {
+    height: 70vh;
+    padding: 3% 5%;
+  }
+
+  .introcontent, .aboutcontent {
+    position: relative;
+    padding: 0%;
+    text-align: center;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .introcontent {
+    margin-bottom: 6%;
+  }
+
+  .profilepic {
+    text-align: center;
+  }
+
+  .profilepic img {
+    position: relative;
+    padding: 0;
+    display: block;
+    float: none;
+    width: 445px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .aboutslide {
+    height: 38vh;
+    padding: 5%;
+  }
+
+  .skillslide {
+    height: 94vh;
+    padding: 3% 5%;
+  }
+
+  .skillcontent {
+    text-align: center;
+    width: 100%;
+    color: #78ACC6;
+    font-family: Arvo;
+    padding: 4% 0 0 0;
+  }
+
+  .prolink {
+    display: block;
+    padding: 2% 0% 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    color: #78ACC6;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .toolslide {
+    padding: 0% 5%;
+    height: 55vh;
+  }
+
+  .projectslide {
+    height: 140vh;
+    padding: 5% 5%;
+  }
+
+  .projectcontent {
+    text-align: center;
+    color: #78ACC6;
+    font-family: Arvo;
+    padding: 0%;
+    width: 100%;
+  }
+
+  .projectcontent h2 {
+    padding: 1% 0% 1% 0%;
+    border-bottom: solid 3px #78ACC6;
+    display: inline-block;
+  }
+
+}
+
+
+/* ALTERNATE LAYOUT FOR MOBILE */
+
+@media only screen
+and (max-width: 767px) {
+
+  .introslide {
+    height: 70vh;
+    padding: 7% 5%;
+  }
+
+  .introcontent, .aboutcontent {
+    position: relative;
+    padding: 0%;
+    margin-bottom: 7%;
+    text-align: center;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .profilepic img {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+    float: none;
+    width: 445px;
+    top: 0;
+    left: 0;
+  }
+
+  .aboutslide {
+    height: 47vh;
+    padding: 7% 5%;
+  }
+
+  .skillslide {
+    height: 107vh;
+    padding: 5%;
+  }
+
+  .skillcontent {
+    text-align: center;
+    width: 100%;
+    color: #78ACC6;
+    font-family: Arvo;
+    padding: 4% 0 0 0;
+  }
+
+  .prolink {
+    display: block;
+    padding: 2% 0% 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    color: #78ACC6;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .toolslide {
+    padding: 5%;
+    height: 50vh;
+  }
+
+  .projectslide {
+    height: 172vh;
+    padding: 7% 5%;
+  }
+
+  .projectcontent {
+    text-align: center;
+    color: #78ACC6;
+    font-family: Arvo;
+    padding: 0%;
+    width: 100%;
+  }
+
+  .projectcontent h2 {
+    padding: 1% 0% 1% 0%;
+    border-bottom: solid 3px #78ACC6;
+    display: inline-block;
+  }
+
+}

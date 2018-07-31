@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Lato');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Archivo+Black');
+
+body {
+  font-family: "Raleway";
+  margin: 0;
+}
+
+/* HEADER / FRONT PAGE STYLING */
+
+.introhead {
+  background-image:
+    url('img/robinson24.jpg'),
+    url('img/robinson12.jpg'),
+    url('img/robinson4.jpg'),
+    url('img/robinson28.jpg'),
+    url('img/robinson35.jpg');
+  height: 85.5%;
+  opacity: 0;
+  overflow: visible;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  background: white;
+  height: 14.5%;
+  font-family: "Abril Fatface";
+  font-weight: lighter;
+  font-size: 1.1em;
+  margin-right: 2%;
+}
+
+.navbar ul {
+  width: 100%;
+  display: block;
+  text-align: right;
+  padding: 2.3% 0%;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  vertical-align: middle;
+  padding: 1.2% 1% 1% 1%;
+  transition: .1s ease-out;
+  font-weight: lighter;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li:hover {
+  transform: scale(1.2);
+  transition: .1s ease-in;
+}
+
+.logo img {
+  display: block;
+  width: 220px;
+  float: left;
+  cursor: pointer;
+  padding: 1% 1% 1% 1%;
+  margin-left: 2%;
+}
+
+.separator {
+    width: 60%;
+    background-color: #7b7b7b;
+    border: 0 none;
+    color: #7b7b7b;
+    height: 3px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* ABOUT STYLING */
+
+h1, h2 {
+  font-family: "Abril Fatface";
+  font-size: 3em;
+}
+
+.verticalhr {
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 60%;
+  background-color: #7b7b7b;
+  border: 0 none;
+  color: #7b7b7b;
+}
+
+.aboutslide {
+  background-color: white;
+  height: 77.5vh;
+  position: relative;
+}
+
+.aboutcontent {
+  position: absolute;
+  top: 17%;
+  left: 9.5%;
+  width: 550px;
+  float: left;
+  text-align: right;
+  line-height: 200%;
+}
+
+.profilepic img {
+  position: absolute;
+  top: 5%;
+  left: 52.5%;
+  text-align: center;
+  width: 550px;
+}
+
+/* SKILL STYLING */
+
+.skillslide {
+  height: 80vh;
+  padding: 3% 8% 0% 8%;
+  background: url('img/robinson65.jpg');
+  background-color: grey;
+  background-blend-mode: multiply;
+  overflow: visible;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1000;
+}
+
+.skillcontent {
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.skillcontent .separator {
+  width: 20%;
+  background-color: white;
+  border: 0 none;
+  color: white;
+  height: 3px;
+}
+
+.prolink {
+  display: inline-block;
+  padding: 0% 1% 0% 1%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 30%;
+  vertical-align: top;
+}
+
+.prolink p {
+  line-height: 200%;
+}
+
+/* GALLERY (SLIDE) STYLING */
+
+.galleryslide {
+  position: relative;
+  background-color: white;
+  height: 35vh;
+  padding: 2% 8% 0% 8%;
+}
+
+/* .gallerycontent {
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  float: right;
+  width: 550px;
+} */
+
+.gallerycontent {
+  text-align: center;
+}
+
+
+.button {
+  position: relative;
+  background-color: white;
+  border: solid 3px black;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  transition: .1s ease-out;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  transition: .1s ease-in;
+}
+
+/* CONTACT STYLING */
+
+.contactslide {
+  height: 78vh;
+  padding: 3% 8% 0% 8%;
+  background: url('img/robinson31.jpg');
+  background-color: grey;
+  background-blend-mode: multiply;
+  overflow: visible;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1000;
+}
+
+.contactcontent {
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.contactsection {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  width: 40%;
+  vertical-align: top;
+}
+
+.contactsocial {
+  text-align: center;
+  color: white;
+}
+
+.contactcontent .separator {
+  width: 20%;
+  background-color: white;
+  border: 0 none;
+  color: white;
+  height: 3px;
+}
+
+
+
+/* FOOTER STYLING */
+
+.footerslide {
+  height: 22.5vh;
+  background-color: white;
+  padding: 1% 8% 0% 8%;
+}
+
+.footercontent {
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  transition: .1s ease-out;
+  cursor: pointer;
+}
+
+.footerslide .fa:hover {
+  color: white;
+  background-color: black;
+  transition: .1s ease-in;
+}
+
+.fa-twitter, .fa-facebook, .fa-instagram, .fa-github {
+  font-size: 100px;
+  color: black;
+}
+
+.copyright {
+  padding-top: 2%;
+}
+
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+  .logo img {
+    display: block;
+    width: 300px;
+    padding-top: 2%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .introhead {
+    width: 100%;
+    height: 50%;
+  }
+
+  .navbar {
+    height: 52%;
+  }
+
+  .navbar li {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutslide {
+    padding: 5%;
+    height: 116vh;
+  }
+
+  .aboutcontent {
+    top: 0;
+    left: 0;
+    position: relative;
+    padding: 0%;
+    text-align: center;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .profilepic img {
+    position: relative;
+    padding-top: 5%;
+    display: block;
+    float: none;
+    width: 445px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .verticalhr {
+    display: none;
+  }
+
+  .skillslide {
+    padding: 5%;
+    height: 123vh;
+  }
+
+  .skillcontent {
+    text-align: center;
+    width: 100%;
+    padding: 0% 0 0 0;
+  }
+
+  .prolink {
+    display: block;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .galleryslide {
+    height: 48vh;
+    padding: 5%;
+  }
+
+  .contactslide {
+    height: 70vh;
+    padding: 5%;
+  }
+
+  .contactcontent {
+    z-index: 10;
+  }
+
+  .contactsection {
+    width: 100%;
+  }
+
+}
+
+@media only screen
+and (max-width: 767px) {
+
+  .logo img {
+    display: block;
+    width: 400px;
+    padding-top: 2%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .introhead {
+    width: 100%;
+    height: 52%;
+  }
+
+  .navbar {
+    height: 55%;
+  }
+
+  .navbar li {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutslide {
+    padding: 5%;
+    height: 122vh;
+  }
+
+  .aboutcontent {
+    top: 0;
+    left: 0;
+    position: relative;
+    padding: 0%;
+    text-align: center;
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .profilepic img {
+    position: relative;
+    padding-top: 5%;
+    display: block;
+    float: none;
+    width: 445px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .verticalhr {
+    display: none;
+  }
+
+  .skillslide {
+    padding: 5%;
+    height: 137vh;
+  }
+
+  .skillcontent {
+    text-align: center;
+    width: 100%;
+    padding: 0% 0 0 0;
+  }
+
+  .prolink {
+    display: block;
+    padding: 0% 0% 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .galleryslide {
+    height: 53vh;
+    padding: 5%;
+  }
+
+  .contactslide {
+    height: 73vh;
+    padding: 5%;
+  }
+
+  .contactcontent {
+    z-index: 10;
+  }
+
+  .contactsection {
+    width: 100%;
+  }
+
+
+
+}
+
+/* GALLERY (PAGE) STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Center website */
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h1 {
+  margin-top: 5%;
+  font-size: 5em;
+  text-align: center;
+}
+
+.main hr {
+  width: 50%;
+  background-color: #7b7b7b;
+  border: 0 none;
+  color: #7b7b7b;
+  height: 3px;
+}
+
+.row {
+    margin: 4px -8px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 4px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    body {
+      padding: 3%;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    body {
+      padding: 3%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+}
